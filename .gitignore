@@ -1,3 +1,4 @@
 *.jpg
 .idea
 .DS_Store
+*.pyc
