@@ -12,8 +12,8 @@ def process(image_file):
     for tag in tags.keys():
         # print "key:%s, value:%s" % (tag, tags[tag])
         if tag == "Image DateTime":
-            diff_str = DateUtil.get_days(tags[tag])
-            ImageUtil.set_text(image_file, diff_str)
+            diff_str, date_str = DateUtil.get_days(tags[tag])
+            ImageUtil.set_text(image_file, diff_str, date_str)
 
 
 for root, dirs, files in os.walk(img_dir):

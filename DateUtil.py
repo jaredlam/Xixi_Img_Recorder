@@ -19,8 +19,8 @@ def get_days(arg):
     if diff_years > 0:
         result += str(diff_years) + "年，"
     if diff_months > 0:
-        result += str(diff_months) + "个月，"
+        result += str(diff_months) + "个月~"
     if diff_days > 0:
         result += str(diff_days) + "天"
 
-    return result
+    return result, take_photo_date.strftime("%Y-%m-%d")
